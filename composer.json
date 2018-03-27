@@ -1,16 +1,40 @@
 {
-  "name": "defenestrator/laravel5-couchdb",
-  "description": "CouchDB Driver for the Laravel 5 family. Includes doctrine/couchdb as a dependency in composer.json and sets up a Laravel and Eloquent-friendly Service Provider for you. Enjoy!",
+  "name": "bnbwebexpertise/laravel-couchdb",
+  "description": "CouchDB Provider for the Laravel 5.5+ family. Includes doctrine/couchdb as a dependency in composer.json and sets up a Laravel and Eloquent-friendly Service Provider for you. Enjoy!",
   "authors": [
+    {
+      "name": "B&B Web Expertise",
+      "email": "support@bnb.re"
+    },
     {
       "name": "Jeremy Anderson",
       "email": "jeremy@copacetic.co"
     }
   ],
   "require": {
-    "illuminate/database": "^5.2",
-    "illuminate/support": "^5.2"
+    "php": ">=7.0",
+    "illuminate/database": "5.6.x|5.5.x",
+    "illuminate/support": "5.6.x|5.5.x",
+    "doctrine/couchdb": "@dev"
   },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+  "require-dev": {
+    "laravel/framework": "5.6.x|5.5.x"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Bnb\\Laravel\\CouchDb\\": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.x-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Bnb\\Laravel\\CouchDb\\CouchDbServiceProvider"
+      ]
+    }
+  }
 }

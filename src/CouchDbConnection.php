@@ -1,4 +1,4 @@
-<?php namespace Defenestrator\Laravel5\CouchDb;
+<?php namespace Bnb\Laravel\CouchDb;
 use \Doctrine\CouchDB\CouchDBClient;
 use \Illuminate\Database\Connection;
 

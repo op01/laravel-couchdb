@@ -1,21 +1,22 @@
-# laravel5-couchdb
-CouchDB database driver for Laravel 5
+# laravel-couchdb
+
+CouchDB database driver for Laravel 5.5+
 
 ## Dependencies
 
-*laravel5-couchdb* uses [doctrine/couchdb](https://github.com/doctrine/couchdb).
+*laravel-couchdb* uses [doctrine/couchdb](https://github.com/doctrine/couchdb).
 
 ## Installation
 
-`composer require defenestrator/laravel5-couchdb`.
+`composer require bnbwebexpertise/laravel-couchdb`.
 
 Add the service provider in `app/config/app.php`:
 
 ```php
-'Defenestrator\Laravel5\Couchdb\CouchdbServiceProvider',
+'Bnb\Laravel\CouchDb\CouchdbServiceProvider',
 ```
 
-When using couchdb connections, Laravel will automatically provide you with the corresponding couchdb objects.
+When using CouchDB connections, Laravel will automatically provide you with the corresponding CouchDB objects.
 
 ## Configuration
 
@@ -28,7 +29,7 @@ Change your default database connection name in `app/config/database.php`:
 And add a new couchdb connection:
 
 ```php
-'couchdb' => array(
+'couchdb' => [
     'driver'   => 'couchdb',
     'type'     => 'socket',
     'host'     => 'localhost',
@@ -38,13 +39,13 @@ And add a new couchdb connection:
     'user'     => 'username',
     'password' => 'password',
     'logging'  => false,
-),
+],
 ```
 ## Examples
 
 ```php
 /**
- * @var \Defenestrator\Laravel5\Couchdb\CouchdbConnection
+ * @var \Bnb\Laravel\CouchDb\CouchdbConnection
  */
 $connection = DB::connection('couchdb');
 
