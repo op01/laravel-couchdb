@@ -45,7 +45,7 @@ And add a new couchdb connection:
 
 ```php
 /**
- * @var \Bnb\Laravel\CouchDb\CouchdbConnection
+ * @var \Bnb\Laravel\CouchDb\CouchDbConnection
  */
 $connection = DB::connection('couchdb');
 

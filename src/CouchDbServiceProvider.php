@@ -14,7 +14,7 @@ class CouchDbServiceProvider extends ServiceProvider
     {
         // Add couchdb to the database manager
         $this->app['db']->extend('couchdb', function ($config) {
-            return new CouchdbConnection($config);
+            return new CouchDbConnection($config);
         });
     }
 }
