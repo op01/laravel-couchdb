@@ -38,6 +38,7 @@ And add a new couchdb connection:
     'dbname'   => 'database',
     'user'     => 'username',
     'password' => 'password',
+    'ssl'      => false,
     'logging'  => false,
 ],
 ```
