@@ -40,6 +40,7 @@ And add a new couchdb connection:
     'password' => 'password',
     'ssl'      => false,
     'logging'  => false,
+    'timeout'  => 15,
 ],
 ```
 ## Examples
