@@ -10,7 +10,7 @@ CouchDB database driver for Laravel 5.5+
 
 `composer require bnbwebexpertise/laravel-couchdb`.
 
-Add the service provider in `app/config/app.php`:
+For laravel 5.5 and older, add the service provider in `app/config/app.php`:
 
 ```php
 'Bnb\Laravel\CouchDb\CouchdbServiceProvider',
