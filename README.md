@@ -13,7 +13,7 @@ CouchDB database driver for Laravel 5.5+
 For laravel 5.5 and older, add the service provider in `app/config/app.php`:
 
 ```php
-'Bnb\Laravel\CouchDb\CouchdbServiceProvider',
+'Bnb\Laravel\CouchDb\CouchDbServiceProvider',
 ```
 
 When using CouchDB connections, Laravel will automatically provide you with the corresponding CouchDB objects.
