@@ -1,6 +1,6 @@
 # laravel-couchdb
 
-CouchDB database driver for Laravel 5.5+
+CouchDB database driver for Laravel 5.5+ and maybe 5.8?
 
 ## Dependencies
 
